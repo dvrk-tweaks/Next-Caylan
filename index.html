@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Free Fortnite coaching and performance tweak packs.">
+  <title>Elite Coaching | Free Fortnite Coaching</title>
+  <style>
+    :root{
+      --bg:#07090f; --panel:#10131c; --panel2:#151a25; --text:#f5f7ff;
+      --muted:#9ba4b7; --accent:#7c5cff; --accent2:#00d4ff; --line:#252b3a;
+      --success:#45e38a;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:Inter,Segoe UI,Arial,sans-serif;background:
+      radial-gradient(circle at 80% -10%,rgba(124,92,255,.22),transparent 32%),
+      radial-gradient(circle at 10% 20%,rgba(0,212,255,.10),transparent 28%),var(--bg);
+      color:var(--text);line-height:1.5}
+    a{text-decoration:none;color:inherit}
+    .container{width:min(1120px,92%);margin:auto}
+    nav{position:sticky;top:0;z-index:20;background:rgba(7,9,15,.82);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+    .navin{height:72px;display:flex;align-items:center;justify-content:space-between}
+    .logo{font-size:1.25rem;font-weight:900;letter-spacing:.5px}
+    .logo span{color:var(--accent)}
+    .links{display:flex;gap:25px;align-items:center;color:#cbd2e3;font-size:.95rem}
+    .links a:hover{color:white}
+    .btn{display:inline-flex;align-items:center;justify-content:center;border:0;border-radius:11px;padding:13px 19px;font-weight:800;cursor:pointer;transition:.2s}
+    .btn:hover{transform:translateY(-2px)}
+    .primary{background:linear-gradient(135deg,var(--accent),#9a6cff);color:white;box-shadow:0 8px 30px rgba(124,92,255,.22)}
+    .secondary{border:1px solid var(--line);background:#121722;color:white}
+    .hero{padding:105px 0 85px;text-align:center}
+    .badge{display:inline-block;border:1px solid #343b50;background:#111522;color:#bfc8dd;border-radius:999px;padding:7px 12px;font-size:.82rem;margin-bottom:20px}
+    h1{font-size:clamp(2.7rem,7vw,5.5rem);line-height:.98;letter-spacing:-3px;max-width:850px;margin:auto}
+    h1 span{background:linear-gradient(90deg,#fff,var(--accent2),#9b7cff);-webkit-background-clip:text;color:transparent}
+    .hero p{max-width:650px;color:var(--muted);margin:22px auto 30px;font-size:1.08rem}
+    .actions{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+    section{padding:75px 0}
+    .section-head{text-align:center;margin-bottom:38px}
+    .section-head h2{font-size:2.1rem;margin-bottom:8px}
+    .section-head p{color:var(--muted)}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .card{background:linear-gradient(180deg,rgba(21,26,37,.96),rgba(12,15,23,.96));border:1px solid var(--line);border-radius:18px;padding:25px;box-shadow:0 15px 45px rgba(0,0,0,.18)}
+    .card:hover{border-color:#414b65;transform:translateY(-3px);transition:.2s}
+    .icon{font-size:1.8rem;margin-bottom:14px}
+    .card h3{font-size:1.25rem;margin-bottom:8px}
+    .card p{color:var(--muted);font-size:.95rem;margin-bottom:20px}
+    .coach{display:grid;grid-template-columns:1.15fr .85fr;gap:20px}
+    .bigcard{padding:35px}
+    .check{list-style:none;display:grid;gap:12px;margin:22px 0}
+    .check li:before{content:"✓";color:var(--success);font-weight:900;margin-right:10px}
+    .price-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:15px}
+    .price{font-size:2rem;font-weight:900;margin:12px 0}
+    .price small{font-size:.9rem;color:var(--muted);font-weight:600}
+    .featured{border-color:var(--accent);box-shadow:0 0 0 1px rgba(124,92,255,.2),0 18px 55px rgba(124,92,255,.12)}
+    .tag{font-size:.72rem;color:#cfc6ff;background:rgba(124,92,255,.15);padding:5px 8px;border-radius:6px;display:inline-block}
+    .faq{max-width:800px;margin:auto;display:grid;gap:12px}
+    details{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:17px 19px}
+    summary{cursor:pointer;font-weight:800}
+    details p{color:var(--muted);padding-top:12px}
+    .cta{text-align:center;background:linear-gradient(135deg,rgba(124,92,255,.16),rgba(0,212,255,.08));border:1px solid var(--line);border-radius:22px;padding:55px 20px}
+    footer{border-top:1px solid var(--line);padding:30px 0;color:var(--muted);text-align:center}
+    @media(max-width:900px){.cards{grid-template-columns:1fr 1fr}.price-grid{grid-template-columns:1fr 1fr}.coach{grid-template-columns:1fr}}
+    @media(max-width:620px){.links{display:none}.cards{grid-template-columns:1fr}.price-grid{grid-template-columns:1fr}.hero{padding-top:75px}h1{letter-spacing:-1.8px}}
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="container navin">
+      <a class="logo" href="#">ELITE<span>COACHING</span></a>
+      <div class="links">
+        <a href="#coaching">Coaching</a>
+        <a href="#tweaks">Tweaks</a>
+        <a href="#faq">FAQ</a>
+        <a class="btn primary" target="_blank" rel="noopener" href="https://discord.gg/Tez5PteVw">Join Discord</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="badge">FREE FORTNITE COACHING • PERFORMANCE TWEAKS</div>
+        <h1>Level up your <span>Fortnite game.</span></h1>
+        <p>Get a free coaching session, improve your gameplay, and explore performance-focused tweak packs built for competitive players.</p>
+        <div class="actions">
+          <a class="btn primary" href="#coaching">Get Free Coaching</a>
+          <a class="btn secondary" target="_blank" rel="noopener" href="https://discord.gg/Tez5PteVw">Join Discord</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="coaching">
+      <div class="container">
+        <div class="section-head">
+          <h2>Free Fortnite Coaching</h2>
+          <p>Get help identifying what is holding your gameplay back.</p>
+        </div>
+        <div class="coach">
+          <div class="card bigcard">
+            <div class="icon">🎯</div>
+            <h3>1-on-1 Coaching Session</h3>
+            <p>Join our Discord and request a free session with a coach. We'll focus on practical improvements you can use in your next games.</p>
+            <ul class="check">
+              <li>Gameplay review</li>
+              <li>Tips for fights, mechanics and decision-making</li>
+              <li>Personalized improvement advice</li>
+              <li>Competitive Fortnite focused</li>
+            </ul>
+            <a class="btn primary" target="_blank" rel="noopener" href="https://discord.gg/Tez5PteVw">Book Free Session</a>
+          </div>
+          <div class="card bigcard">
+            <div class="icon">💬</div>
+            <h3>How it works</h3>
+            <p>It's simple — no payment is needed for coaching.</p>
+            <ul class="check">
+              <li>Join the Discord</li>
+              <li>Open a coaching request</li>
+              <li>Choose a suitable time with a coach</li>
+              <li>Start improving</li>
+            </ul>
+            <a class="btn secondary" target="_blank" rel="noopener" href="https://discord.gg/Tez5PteVw">Join Server</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="tweaks">
+      <div class="container">
+        <div class="section-head">
+          <h2>Performance Tweaks</h2>
+          <p>Choose the pack that fits what you want to optimize.</p>
+        </div>
+        <div class="price-grid">
+          <div class="card">
+            <span class="tag">NVIDIA</span><h3>NVIDIA Pack</h3><div class="price">$4 <small>one-time</small></div>
+            <p>NVIDIA-focused performance tweaks for supported systems.</p>
+            <a class="btn primary buy" href="https://discord.gg/Tez5PteVw">Buy Pack</a>
+          </div>
+          <div class="card">
+            <span class="tag">AMD</span><h3>AMD Pack</h3><div class="price">$3 <small>one-time</small></div>
+            <p>AMD-focused performance tweaks for supported systems.</p>
+            <a class="btn primary buy" href="https://discord.gg/Tez5PteVw">Buy Pack</a>
+          </div>
+          <div class="card">
+            <span class="tag">NETWORK</span><h3>Network Pack</h3><div class="price">$5 <small>one-time</small></div>
+            <p>Network-focused settings designed around smoother online play.</p>
+            <a class="btn primary buy" href="https://discord.gg/Tez5PteVw">Buy Pack</a>
+          </div>
+          <div class="card featured">
+            <span class="tag">POPULAR</span><h3>Extreme Pack</h3><div class="price">$15 <small>one-time</small></div>
+            <p>An advanced bundle of performance-focused tweaks.</p>
+            <a class="btn primary buy" href="https://discord.gg/Tez5PteVw">Buy Pack</a>
+          </div>
+          <div class="card">
+            <span class="tag">BUNDLE</span><h3>All-in-One</h3><div class="price">$10 <small>one-time</small></div>
+            <p>A convenient bundle for players who want multiple tweak categories.</p>
+            <a class="btn primary buy" href="https://discord.gg/Tez5PteVw">Buy Pack</a>
+          </div>
+        </div>
+        <p style="text-align:center;color:var(--muted);margin-top:18px;font-size:.85rem">Purchases currently direct you to Discord so you can arrange payment and receive the pack.</p>
+      </div>
+    </section>
+
+    <section id="faq">
+      <div class="container">
+        <div class="section-head"><h2>FAQ</h2><p>Quick answers before you get started.</p></div>
+        <div class="faq">
+          <details><summary>Is coaching actually free?</summary><p>Yes. The coaching session itself is offered for free through the Discord server.</p></details>
+          <details><summary>How do I buy a tweak pack?</summary><p>Click Buy Pack and you'll be taken to the Discord server to arrange the purchase.</p></details>
+          <details><summary>Will tweaks guarantee higher FPS?</summary><p>No. Performance varies by PC hardware, game settings, drivers and other factors. Tweaks are not a guarantee of a specific FPS result.</p></details>
+          <details><summary>Do I need Discord?</summary><p>For coaching and current pack purchases, yes, because requests and delivery are handled through the Discord server.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="cta">
+          <h2>Ready to improve?</h2>
+          <p style="color:var(--muted);margin:10px auto 22px">Join the community and request your free Fortnite coaching session.</p>
+          <a class="btn primary" target="_blank" rel="noopener" href="https://discord.gg/Tez5PteVw">Join Elite Coaching Discord</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">© 2026 Elite Coaching. Fortnite is a trademark of Epic Games, Inc.</div>
+  </footer>
+</body>
+</html>
